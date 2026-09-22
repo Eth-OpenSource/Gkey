@@ -22,8 +22,8 @@
             <author>Ge'ez Dev</author>
             <icon>ibus-keyboard</icon>
             <layout>us</layout>
-            <longname>Ge'ez (Custom)</longname>
-            <description>Custom Headless Ge'ez IME</description>
+            <longname>Gkey</longname>
+            <description>Gkey Headless IME</description>
             <rank>99</rank>
         </engine>
     </engines>
