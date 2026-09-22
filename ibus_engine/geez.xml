@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file tells the Linux GUI that our custom keyboard exists! -->
+<component>
+    <name>org.freedesktop.IBus.GeezCustom</name>
+    <description>Headless Ge'ez Keyboard</description>
+    <!-- Linux will run this exact command to start our background service -->
+    <exec>/usr/bin/python3 /home/jesus-is-lord/projects/keyboard_project/ibus_engine/main.py</exec>
+    <version>1.0</version>
+    <author>Ge'ez Dev</author>
+    <license>Open Source</license>
+    <homepage></homepage>
+    <textdomain>ibus-geez</textdomain>
+    <engines>
+        <engine>
+            <!-- This name must exactly match the name in our Python script! -->
+            <name>geez-custom</name>
+            
+            <!-- 'am' is the ISO language code for Amharic. 
+                 This puts it under the Amharic section in Linux Settings -->
+            <language>am</language> 
+            <license>Open Source</license>
+            <author>Ge'ez Dev</author>
+            <icon>ibus-keyboard</icon>
+            <layout>us</layout>
+            <longname>Ge'ez (Custom)</longname>
+            <description>Custom Headless Ge'ez IME</description>
+            <rank>99</rank>
+        </engine>
+    </engines>
+</component>
