@@ -1,5 +1,7 @@
 # Gkey
 
+![Status](https://img.shields.io/badge/Status-Under_Development-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![IBus](https://img.shields.io/badge/IBus_Integration-4EAA25?style=for-the-badge)
@@ -62,5 +64,20 @@ sudo ./install.sh
 4. Click the three vertical dots (⋮) or "Other", search for **Amharic**, and select **Gkey**.
 5. Switch to the keyboard using your global shortcut (e.g., `Super + Space` or `Win + Space`).
 
-## Next Move
-Rewrite the core processing engine in a compiled, low-level language (C++ or Rust) and package as native dynamic libraries (`.so` / `.dll`) for maximum performance and Windows TSF support.
+## Roadmap
+
+* **Phase 1 (Current):** Python prototype for rapid development and testing of mapping algorithms and OS hooks.
+* **Phase 2 (Planned):** Rewrite the core processing engine in a compiled, low-level language (C++ or Rust) and package as native dynamic libraries (`.so` / `.dll`) for maximum performance and Windows TSF support.
+
+## Contributing
+
+Contributions are welcome! Since this project is currently **Under Development**, there are many areas to improve:
+1. **SERA Rules:** Expanding `engine/sera_rules.py` to include edge cases, punctuation, and numbers.
+2. **Caps Lock Bug:** Handling uppercase variations gracefully without breaking the state machine.
+3. **Word Prediction:** Expanding the Trie to support full word autocorrect and suggestions.
+
+Feel free to fork the repository, create a feature branch, and submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
